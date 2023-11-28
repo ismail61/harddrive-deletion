@@ -11,7 +11,6 @@ const CustomerView = () => {
   const [callCheckDeviceAPI, { data: checkData, error, isLoading }] = useCheckDeviceMutation();
   const handleFormSubmit = async (e) => {
     e.preventDefault();
-    console.log(formData)
     await callCheckDeviceAPI(formData);
   };
   useEffect(() => {
