@@ -1,0 +1,13 @@
+.sidebar {}
+
+.sidebar.active {
+    /* Styles applied when the sidebar is active */
+    left: 0;
+}
+
+
+/* @media only screen and (max-width: 600px) {
+    .sidebar {
+        display: inline-flex;
+    }
+} */
