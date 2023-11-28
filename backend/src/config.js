@@ -3,7 +3,9 @@ const {
     MONGODB_URL,
     JWT_SECRET_KEY,
     JWT_COOKIE_EXPIRES_IN,
-} = process.env
+    EMAIL_ADDRESS,
+    EMAIL_PASSWORD,
+} = process.env;
 
 const projectConfig = {
     app: {
@@ -15,6 +17,10 @@ const projectConfig = {
     jwt: {
         key: JWT_SECRET_KEY || 'secret',
         expire: JWT_COOKIE_EXPIRES_IN || '7d'
+    },
+    email: {
+        address: EMAIL_ADDRESS,
+        password: EMAIL_PASSWORD,
     },
 };
 module.exports = projectConfig;
