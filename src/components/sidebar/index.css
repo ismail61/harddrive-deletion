@@ -1,0 +1,13 @@
+.sidebar {
+    /* width: 250px; */
+    /* Set your sidebar width */
+    /* background-color: black;
+    float: right; */
+    /* or display: inline-block; depending on your layout */
+}
+
+@media only screen and (max-width: 600px) {
+    .sidebar {
+        display: none;
+    }
+}
